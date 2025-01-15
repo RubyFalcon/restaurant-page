@@ -120,7 +120,19 @@
   }
 
 
+  .github {
+    height: 100%;
+    width: 2rem;
+    
+  }
+  
+  .github path {
+    fill: white;
+  }
 
+  .github:hover path {
+    fill: var(--second-color);
+  }
 
   @media (max-width: 500px) {
     .content {
