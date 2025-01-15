@@ -1,3 +1,92 @@
-body {
-    background-color: #F1f1f1;
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    font-family: 'Roboto' , sans-serif;
+    background: url("./outdoor-dining-1846137.jpg");
+    color: white;
+    background-size: cover;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  a, a *, button, button * {
+    cursor: pointer;
+    transition: var(--fast-transition);
 }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  .shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  header nav{
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    display: flex;
+    
+
+  }
+
+  header button {
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    padding: .5rem 1rem;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  header button:hover {
+    background-color: rgba(180, 178, 178, 0.2);
+  }
+  .content{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
