@@ -135,8 +135,28 @@
     fill: var(--second-color);
   }
 
-  
+  .menu-page {
+    background-color: white;
+    color: black;
+    padding: 3rem;
+    border-radius: 2rem;
+  }
 
+  .menu-page h1 {
+    margin: 0;
+  }
+  #menu-description {
+    margin-bottom: 1rem;
+  }
+  .foods {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .food-card {
+    
+    border-bottom: 1px solid var(--second-color);
+  }
   @media (max-width: 500px) {
     .content {
         margin: 0 auto;
