@@ -10,7 +10,7 @@ export const menu = () => {
 
     const createItem = (name, desc, price)=> {
         const foodItem = document.createElement("div");
-        foodItem.className = ".food-card";
+        foodItem.className = "food-card";
         const foodName = document.createElement("h2");
         foodName.textContent = name;
         const foodDesc = document.createElement("p");
@@ -30,12 +30,12 @@ export const menu = () => {
     content.textContent = "";
     const h1 = document.createElement("h1");
     h1.id  = "menu-title";
-    h1.textContent = "Falcon's Fabolous Taverna Menu"
+    h1.textContent = "Menu"
 
     const p  = document.createElement("p");
     p.id= "menu-description";
     p.textContent = "We have our menu";
-    menuPage.append(h1,p, foods);
+    menuPage.append(h1, foods);
     content.append(menuPage );
   
 }
