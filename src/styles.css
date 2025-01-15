@@ -103,6 +103,7 @@
 
   h1 {
     font-size: 2rem;
+    margin-top: 4rem;
   }
 
   p{
@@ -133,6 +134,8 @@
   .github:hover path {
     fill: var(--second-color);
   }
+
+  
 
   @media (max-width: 500px) {
     .content {
