@@ -165,7 +165,7 @@
   @media (max-width: 500px) {
     .content {
         margin: 0 auto;
-        width: 25rem;
+        width: 23rem;
         justify-content: center;
     }
      h1{
@@ -190,4 +190,15 @@
       nav button {
         padding: 0;
       }
+  }
+
+  @media (max-width: 400px) {
+    .content {
+      width: 20rem;
+      
+    }
+
+    .menu-page{
+      margin-top: 4rem;
+    }
   }
